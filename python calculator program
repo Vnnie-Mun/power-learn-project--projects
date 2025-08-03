@@ -1,0 +1,40 @@
+Here's a simple Python program that works as described:
+
+```python
+# Basic Calculator Program
+
+# Ask user to input two numbers and an operator
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operator = input("Enter an operator (+, -, *, /): ")
+
+# Perform the operation and print the result
+if operator == '+':
+    result = num1 + num2
+    print(f"{num1} + {num2} = {result}")
+elif operator == '-':
+    result = num1 - num2
+    print(f"{num1} - {num2} = {result}")
+elif operator == '*':
+    result = num1 * num2
+    print(f"{num1} * {num2} = {result}")
+elif operator == '/':
+    if num2 != 0:
+        result = num1 / num2
+        print(f"{num1} / {num2} = {result}")
+    else:
+        print("Error: Division by zero is not allowed.")
+else:
+    print("Invalid operator. Please enter one of +, -, *, /.")
+```
+
+### Sample Output:
+
+```
+Enter the first number: 10  
+Enter the second number: 5  
+Enter an operator (+, -, *, /): +  
+10.0 + 5.0 = 15.0
+```
+
+Let me know if you want this with a graphical interface or as a loop that runs multiple times.
